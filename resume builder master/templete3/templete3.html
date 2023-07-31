@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="from">
+            <div class="download_button">
+
+                <button class="download" onclick="pdfDownload()">Download</button>
+            </div>
+<div class="form_underline"></div>
+<div class="form-style-5">
+    <form  onsubmit="submitName()">
+    <fieldset>
+    <legend><span class="number">1</span> Personal Info</legend>
+    <input type="text" name="fielrd1" placeholder="Your Name *"  onchange="setName()">
+    <textarea name="field3" placeholder="About yourself" onchange="summary()"></textarea>
+    <input type="email" name="field1" placeholder="Email *" onchange="email()">
+    <input type="number" name="field1" placeholder="Ph. Number *" onchange="phNumber()">
+    <textarea name="field3" placeholder="Address" onchange="address()"></textarea>
+
+        <button type="submit" >Sumbit Name</button>
+    </form>
+    </div>
+    <div class="form_underline"></div>
+    <div class="form-style-5 education_form">
+        <form  onsubmit="educationSubmit()">
+        <fieldset>
+        <legend><span class="number">2</span> Education</legend>
+        <input type="text" name="field1" placeholder="University *"  id="university">
+        <input type="text" name="field1" placeholder="Course *" id="degree">
+       <div class="button-container">
+
+        <button type="submit">Submit Education</button> 
+       
+    </div>
+        </form>
+        </div>      
+       <div class="form_underline"></div>  
+        
+        <div class="form-style-5 education_form">
+            <form onsubmit="submitWork()">
+            <fieldset>
+            <legend><span class="number">3</span> Work Experince</legend>
+            <input type="text" name="field1" placeholder="Company *" id="companyForm" >
+            <input type="text" name="field1" placeholder="Post Role *"  id="jobform">
+            <textarea name="field3" placeholder="Point" id="exp_points" ></textarea>
+           <div class="button-container">
+    
+            <button type="submit">Submit Experince</button> 
+        </div>
+            </form>
+            </div>
+
+            </div>
+        <div class="templete">
+            <div class="page" id="page">
+                <header class="header">
+                  <label for="filefeild" id="img-label">
+                    <img class="img" src="../templete 1/assets/placeholder.jpg" alt="" srcset="" id="img-f"
+                  /></label>
+                  <input type="file" name="" id="filefeild" class="file" />
+                    <h1 class="bigname">Name</h1>
+                  </p>
+                </header>
+                <div class="info">
+                  <section class="one">
+                    <br />
+                    <br />
+                    <div class="heading">CONTACT</div>
+                    <div class="contact">
+                     
+                        <label for="address">Address</label>
+                        <br />
+                        <p id="address-form">Address</p>
+                        <label for="eamil-form">E-mail</label>
+                        <br />
+                        <p id="email-form" >Email</p>
+                 
+                  
+                        <label for="phone-form">Phone Number</label>
+                       <p id="number-form">Number</p>
+                      
+                    </div>
+                  </section>
+                  <section class="two">
+                    <div class="heading">SUMMARY</div>
+                    <div class="summary about">
+
+                      Summary
+                    </div>
+                    <div class="heading">EXPERINCE</div>
+                    &nbsp;
+                    <div class="experince" id="exp-container-form" >
+                   
+                    </div>
+                    <div class="heading">EDUCATION</div>
+                    &nbsp;
+                    <div class="education">
+                     
+                    </div>
+                  </section>
+                </div>
+                <div class="underline" ></div>
+                <footer></footer>
+              </div>
+            </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

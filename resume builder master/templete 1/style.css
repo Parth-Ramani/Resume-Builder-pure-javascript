@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.templete{
+  width: 794px;
+  height: 1123px;
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+}
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+#header {
+    height: 230px;
+    width: 100%;
+    background: lightblue;
+    display: flex;
+    justify-content: space-around;
+  }
+  .img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 15px;
+    margin-left: 30px;
+  }
+  .name {
+    margin: auto;
+    color: white;
+    letter-spacing: 3px;
+  }
+  .bigname {
+    font-size: 2rem;
+    margin: auto;
+    color: white;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  .name h3 {
+    font-weight: 450;
+    margin-top: 10px;
+  }
+  .post {
+    color: white;
+    letter-spacing: 3px;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  
+  .info {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+   height: 79%;
+  }
+  
+  .first {
+    width:270px;
+    margin: 30px;
+  }
+  .second {
+    background: rgba(128, 128, 128, 0.137);
+    padding: 30px ;
+    padding-right: 0;
+  height: 100%  ;
+    
+  }
+  
+
+  .heading {
+    color: grey;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    margin-top: 30px;
+    text-transform: uppercase;
+  }
+  .underline {
+    height: 5px;
+    width: 60px;
+    background: grey;
+    margin: 10px 0;
+  }
+  p {
+    color: rgba(0, 0, 0, 0.582);
+    margin-bottom: 10px;
+  }
+  .linkedin a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.582);
+  }
+  #skill-container {
+    margin: 20px;
+    color: rgba(0, 0, 0, 0.507);
+  }
+  h2 {
+    font-weight: 450;
+  }
+  .post {
+    color: rgba(0, 0, 0, 0.658);
+    font-size: 1rem;
+  }
+  /* neew */
+  .post {
+    color: white;
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+  }
+
+  .about {
+    color: rgba(0, 0, 0, 0.658);
+    font-size: 1.1rem;
+  }
+  
+  .address {
+    vertical-align: top;
+    color: rgba(0, 0, 0, 0.582);
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .email,
+  .number,
+  .linkedin ,
+  .address{
+    vertical-align: top;
+    color: rgba(0, 0, 0, 0.582);
+    font-size: 16px;
+  }
+  .eduction {
+    margin-top: 20px;
+  }
+  .skills {
+    color: rgba(0, 0, 0, 0.507);
+    font-size: 1.1rem;
+    vertical-align: top;
+  }
+  #subSkill {
+    display: inline;
+  }
+  
+  .company {
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: #413F40;
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+  
+  .comp-post {
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.582);
+    font-size: 1.1rem;
+  }
+  .file {
+    display: none;
+  }
+  .contact{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.contact i {
+    margin-right: 11px;
+}
+.edit-button{
+
+  border: 0;
+  padding: 0;
+  border-radius: 2px;
+  background-color: transparent;
+  position: absolute;
+  right: 10px;
+}
+.right-button{
+  border: 0;
+  padding: 0;
+  border-radius: 2px;
+  background-color: transparent;
+  position: absolute;
+  right: 10px;
+  display: none;
+}
+.edit-button-exp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  padding: 0;
+  border-radius: 2px;
+  background-color: transparent;
+  position: absolute;
+}
+#skill-container li{
+  margin-bottom: 7px;
+}
+.exp-position{
+  position: absolute;
+  right: 42px;
+}
+.skillDelete{
+  color: black;
+  position: absolute;
+  right: 30px;
+  /* top: -3px; */
+}
+/* .edit-button{
+  position: relative;
+} */
+.delete{
+  position: absolute;
+  right: 67px ;
+  /* top: -1px; */
+}
+.experince{
+  position: relative;
+}
+#check{
+  display: none;
+}
+.experince_container{
+  margin-left: 10px;
+}
+.company{
+  text-transform: capitalize;
+}
+.skill-position{
+  position:absolute;
+  top: -38px;
+  right: 32px;
+  color: black;
+}
+#skill-container{
+  position: relative;
+}
+.eduction{
+  position: relative;
+}
+.comp-post{
+  text-transform: capitalize;
+}
+#editUniversity{
+  text-transform: capitalize;
+}
+#editDegree{
+  text-transform: capitalize;
+}
+  
+  .collage {
+    vertical-align: top;
+    color: rgba(0, 0, 0, 0.582);
+    font-size: 16px;
+  }
+  .experince_container{
+    margin-left: 17px;
+    color:rgba(0, 0, 0, 0.582);;
+  }
+  .exp-container{
+    margin-left: 20px;
+  }
+  .overlay{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.363);
+    display :none
+  }
+
+  .check-feild input{
+    max-width: 90%;
+  
+    zoom: 1.5;
+  }
+  button{
+    cursor: pointer;
+  }
+
+  
+  .about{
+    padding-right: 15px;
+  }
+  
+  #skill-container li{
+    width:400px;
+  }
+  .skilldes{
+    position: relative;
+  }
+  .subskill{
+    display: none ;
+  }
+  .skill-btn-add{
+    display: none;
+  }
+  
+  .add-company{
+    display: none;
+    padding: 3px 6px;
+    background: gray;
+    border-radius: 4px;
+    position:absolute;
+    right: 0;
+    top: -14px;
+  }
+  .sub-company{
+    display: none;
+    padding: 3px 8px;
+    background: gray;
+    border-radius: 4px;
+    position:absolute;
+    top: -14px;
+    right: 26px;
+  }
+  
+  .sub-li , .add-li{
+    display: none;
+  }
+  .project{
+    width: 450px;
+  }
+  
+  .experince{
+  
+    margin-left: -24px;
+    margin-top: -11px;
+    padding: 5px;
+   
+  }
+  
+  .bignamepost{
+    text-transform: uppercase;
+  }
+
+.editUniversity{
+  text-transform: capitalize;
+}
+.editDegree{
+  text-transform: capitalize;
+}
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+
+
+  /* form css */
+  .from{
+    width: 430px;
+    padding: 10px;
+    height: 1200px;
+    overflow: scroll;
+}
+
+.from textarea{
+  resize: none;
+  width: 100%;
+  font-family:'Roboto', sans-serif; 
+
+border: 0;
+border-bottom: 2px solid;
+display: block  ;
+outline: 0;
+margin-bottom: 10px;
+color: black;
+}
+.from input {
+  border: 0;
+  display: block  ;
+  outline: 0;
+  margin-bottom: 10px;
+}
+.details textarea {
+border-bottom: 2px solid;
+ resize: none;
+  width: 100%;
+  font-family:'Roboto', sans-serif; 
+  border: 0;
+  display: block  ; 
+  outline: 0;
+  margin-bottom: 10px;
+  color: black;
+}
+.form_underline{
+    height: 2px;
+    width: 100%;
+    background: #413F40;
+    margin: 10px 0;
+}
+.from button{
+    background: #1F90D2;
+    border: 0;
+    color: white;
+    padding: 4px 7px;
+    border-radius: 3px;
+    text-align: center;
+}
+.form_heading{
+  font-weight: bolder;
+  text-align: center;
+}
+
+.download{
+  text-align: center;
+  padding: 5px 10px;
+  border: 2px solid #413F40;
+  background: transparent;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+.button-container{
+  display: flex;
+  justify-content: space-between;
+}
+.download_button{
+  display: flex;
+  justify-content: center;
+}
+.name_container{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.name_container input{
+  border: 1px solid;
+  padding: 3px;
+  border-radius: 2px;
+  width: 100%;
+}
+.skill_form{
+  margin-left: 10px;
+}
+.details input{
+  display: block;
+  border: 1px solid;
+
+  border-radius: 2px;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+.from{
+  width: 430px;
+  padding: 10px;
+  height: 1200px;
+  overflow: scroll;
+}
+.form-style-5{
+	/* max-width: 500px;  */
+	padding: 10px 20px;
+	background: #f4f7f8;
+	margin: 10px auto;
+	/* padding: 20px; */
+	background: #f4f7f8;
+	border-radius: 8px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-style-5 fieldset{
+	border: none;
+}
+.form-style-5 legend {
+	font-size: 1.4em;
+	margin-bottom: 10px;
+}
+.form-style-5 label {
+	display: block;
+	margin-bottom: 8px;
+}
+.form-style-5 input[type="text"],
+.form-style-5 input[type="date"],
+.form-style-5 input[type="datetime"],
+.form-style-5 input[type="email"],
+.form-style-5 input[type="number"],
+.form-style-5 input[type="search"],
+.form-style-5 input[type="time"],
+.form-style-5 input[type="url"],
+.form-style-5 textarea,
+.form-style-5 select {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background: rgba(255,255,255,.1);
+	border: none;
+	border-radius: 4px;
+	font-size: 15px;
+	margin: 0;
+	outline: 0;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	background-color: #e8eeef;
+	color:#8a97a0;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	margin-bottom: 30px;
+}
+.form-style-5 input[type="text"]:focus,
+.form-style-5 input[type="date"]:focus,
+.form-style-5 input[type="datetime"]:focus,
+.form-style-5 input[type="email"]:focus,
+.form-style-5 input[type="number"]:focus,
+.form-style-5 input[type="search"]:focus,
+.form-style-5 input[type="time"]:focus,
+.form-style-5 input[type="url"]:focus,
+.form-style-5 textarea:focus,
+.form-style-5 select:focus{
+	background: #d2d9dd;
+}
+.form-style-5 select{
+	-webkit-appearance: menulist-button;
+	height:35px;
+}
+.form-style-5 .number {
+	background: #1abc9c;
+	color: #fff;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	font-size: 0.8em;
+	margin-right: 4px;
+	line-height: 30px;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+	border-radius: 15px 15px 15px 0px;
+}
+
+.form-style-5 input[type="submit"],
+.form-style-5 input[type="button"]
+{
+	position: relative;
+	display: block;
+	padding: 19px 39px 18px 39px;
+	color: #FFF;
+	margin: 0 auto;
+	background: #1abc9c;
+	font-size: 18px;
+	text-align: center;
+	font-style: normal;
+	width: 100%;
+	border: 1px solid #16a085;
+	border-width: 1px 1px 3px;
+	margin-bottom: 10px;
+}
+.form-style-5 input[type="submit"]:hover,
+.form-style-5 input[type="button"]:hover
+{
+	background: #109177;
+}
+.education_form form{
+  margin-top: 20px;
+}
